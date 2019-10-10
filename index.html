@@ -1,18 +1,24 @@
 <!DOCTYPE html>
 <head>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
     <title>Procedural Maze Visualizer</title>
 </head>
+
 <body>
-    <h1>Procedural Maze Generator with Visualization</h1>
-    <h2>The following script takes a user defined grid and turns it into a Maze using the "Depth First Search Algorithm".</h2>
-    <h2>The green line represents the depth search, while the blue line represents the parts that have been discovered using backtracking.</h2>
-    Width: <input type="text" id='width' value="1000">  
-    Height: <input type="text" id='height' value="800">  
-    Size of squares: <input type="text" id='length' value="80">  
-    Simulation speed (ms between each call): <input type="text" id='speed' value="80">  
-    <button onClick="setupMembers()">Generate Maze!</button>
-    <br><br>
-    <canvas></canvas>
+    <div class="container-fluid">
+        <h1>Procedural Maze Generator with Visualization</h1>
+        <h3>The following script takes a user defined grid and turns it into a Maze using the "Depth First Search Algorithm".</h2>
+        <h3>The green line represents the depth search, while the blue line represents the parts that have been discovered using backtracking.</h2>
+        Width: <input type="text" id='width' value="1200">  
+        Height: <input type="text" id='height' value="900">  
+        Size of squares: <input type="text" id='length' value="50">  
+        Simulation speed (ms between each call): <input type="text" id='speed' value="60">  
+        <button class="btn btn-primary" onClick="setupMembers()">Generate Maze!</button>
+        <br><br>
+        <canvas></canvas>
+    </div>
+    
+    <scrpt type="text/javascript" src="js/bootstrap.min.js"></scrpt>
     <script type="text/javascript" src="Maze.js"></script>
 </body>
 </html>
